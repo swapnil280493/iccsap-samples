@@ -301,7 +301,7 @@ $ oc get deployment -n <namespace>
 
 ## Step 9: Complete post-installation steps
 
-You must complete additional post deployment tasks to make sure your environment is up and running. See [Completing post-deployment tasks](https://www.ibm.com/support/knowledgecenter/SSNVVQ_5.2.1/com.ibm.p8.installingrm.doc/container/frmin025.htm) to follow the post-installation steps. Your tasks will vary depending on whether you used the Initialization and Verify containers to set up your environment.
+You must complete additional post deployment tasks to make sure your environment is up and running. See [Completing post-deployment tasks](https://www.ibm.com/support/knowledgecenter/SSRW2R_4.0.0/doc/container/tsk_comp_post_deploy_tsks.html) to follow the post-installation steps. Your tasks will vary depending on whether you used the Initialization and Verify containers to set up your environment.
 
 ## Step 10: Troubleshooting
 

@@ -2,7 +2,7 @@
 
 ## Delete the operator
 
-To uninstall the deployments and the FileNet Content Manager operator, use the 'deleteOperator.sh' command to delete all the resources that are linked to the operator.
+To uninstall the deployments and the IBM Content Collector for SAP operator, use the 'deleteOperator.sh' command to delete all the resources that are linked to the operator.
 
 ```bash
    ./scripts/deleteOperator.sh
