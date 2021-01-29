@@ -45,9 +45,6 @@ spec:
  ########################################################################
   iccsap_configuration:
 
-    ## Enable/Disable log for ICCSAP
-    no_log: false
-
     ## ICCSAP secret that contains the password to be used for the generation of Keystore and Truststore files
     iccsap_secret_name: "ibm-iccsap-secret"
 
