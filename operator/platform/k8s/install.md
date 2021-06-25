@@ -176,12 +176,12 @@ The operator has a number of descriptors that must be applied.
    containers:
       - name: ansible
           # Replace this with the built image name
-          image: "cp.icr.io/cp/cp4a/icp4a-operator:20.0.3"   
+          image: "cp.icr.io/cp/cp4a/icp4a-operator:21.0.2"   
      -    
      -   
      - name: operator
           # Replace this with the built image name
-          image: "cp.icr.io/cp/cp4a/icp4a-operator:20.0.3"      
+          image: "cp.icr.io/cp/cp4a/icp4a-operator:21.0.2"      
     
     imagePullSecrets:
       - name: "admin.registrykey"
@@ -200,7 +200,7 @@ The operator has a number of descriptors that must be applied.
    
    The script [deployOperator.sh](../../scripts/deployOperator.sh) can be used to deploy the descriptors and the operator pod.
    ```bash
-   $ ./scripts/deployOperator.sh -i <registry_url>/ibm-cp4a-operator:20.0.3 -p '<secret_name>' -n <Namespace>
+   $ ./scripts/deployOperator.sh -i <registry_url>/ibm-cp4a-operator:21.0.2 -p '<secret_name>' -n <Namespace>
    ```
 
    > **Note**: If you do not specify the -i and -n options the operator is deployed in the default namespace at this URL: master_node:8500/default/ibm-iccsap-operator:v1.0.0.
