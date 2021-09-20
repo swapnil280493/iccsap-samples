@@ -23,6 +23,9 @@ spec:
   ## This section contains the shared configuration for all CP4A components #
   ##########################################################################
   appVersion: 4.0.0.4.3
+  ## MUST exist, used to accept ibm license, valid value only can be "accept"
+  ibm_license: ""
+  
   shared_configuration:
 
     ## This is the deployment context is iccsap. No update it required.
