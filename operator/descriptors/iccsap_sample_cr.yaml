@@ -16,7 +16,7 @@ metadata:
     app.kubernetes.io/instance: ibm-dba
     app.kubernetes.io/managed-by: ibm-dba
     app.kubernetes.io/name: ibm-dba
-    release: 4.0.0.4.3
+    release: 4.0.0.4.9
 spec:
   ## TIPS: The names of all variables in the spec field are converted to snake_case by the operator before running ansible
   ## For example, serviceAccount in the spec becomes service_account in ansible.
@@ -36,7 +36,7 @@ spec:
     image_pull_secrets:
     - "admin.registrykey"
     sc_deployment_license: User
-    sc_deployment_type: enterprise
+    sc_deployment_type: production
     sc_deployment_platform: OCP
    
 
@@ -55,12 +55,18 @@ spec:
     ## The number of replicas or pods to be deployed.  The default is 1 replica and for high availability in a production env,
     ## it is recommended to have 2 or more.
     replica_count: 2
+    # Optional: Use an existing certificate for automatic creation of OpenShift routes.
+    # Set this key if you have an external TLS certificate. Leave this empty if you don't have an external TLS certificate, operator will generate one for you.
+      iccsap_ext_tls_secret_name:
+    ## Optional. The Certificate Authority (CA) used to sign the external TLS secret for automatic creation of OpenShift routes.
+    ## Set this key if you have a CA to sign the external TLS certificate, leave this parameter empty if you don't have the CA of your external TLS certificate.
+      iccsap_auth_ca_secret_name:
 
     ## This is the image repository and tag that correspond to image registry, which is where the image will be pulled.
     image:
       ## The default repository is the IBM Entitled Registry
       repository: cp.icr.io/cp/cp4a/iccsap/iccsap
-      tag: ga-4004-iccsap-if003
+      tag: ga-4004-iccsap-if009
 
       ## This will override the image pull policy in the shared_configuration.
       pull_policy: IfNotPresent
